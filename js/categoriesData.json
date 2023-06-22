@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "text": "Top World",
+      "imgPath": "Categories/item1.jpg"
+    },
+    {
+      "text": "Hottest New",
+      "imgPath": "Categories/item2.jpg"
+    },
+    {
+      "text": "Family",
+      "imgPath": "Categories/item3.jpg"
+    },
+    {
+      "text": "Luxury",
+      "imgPath": "Categories/item4.jpg"
+    },
+    {
+      "text": "Out of the Ordinary",
+      "imgPath": "Categories/item5.jpg"
+    }
+  ]
+}

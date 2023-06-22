@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.main_container {
+  margin: 10px 50px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+
+.logo {
+  flex: auto;
+}
+
+.img-logo {
+    height: 6vh;
+    margin-top: 0.6vh;
+  }
+
+.nav-item {
+  width: 10%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+.nav-item:hover {
+  background-color: #f96d00;
+  color: white;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover > a {
+  color: white;
+}
+
+#sign {
+  background-color: black;
+}
+
+#sign:hover {
+  background-color: black;
+}
+
+#sign > a {
+  color: white;
+}
+
+#sign > a > h1 {
+  padding-top: 5px;
+}
+
+
+.material-icons-outlined {
+  display: inline;
+  vertical-align: text-bottom;
+}
+
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7vh;
+  margin: 5vh 0vh;
+}
+
+.menu-item {
+  border-radius: 9px;
+  border: 1px solid rgb(238, 113, 113);
+  flex: 1;
+  padding: 9px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item:hover {
+  background-color: rgb(238, 113, 113);
+}
+
+.menu-item:hover a {
+  color: white;
+}
+.menu-item:hover .material-icons {
+  color: white;
+}
+
+.search-background-img {
+  position: relative;
+}
+
+.search-background-img img {
+  width: 100%;
+}
+
+.search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55vw;
+  border-radius: 2em;
+  border: none;
+  display: block;
+  padding: 1.5em 4em;
+  background: white url("../Images/search.svg") no-repeat 13px;
+  -webkit-box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.24);
+}
+
+.hotel-img {
+  position: relative;
+  margin-top: 7vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/hotel.jpg");
+  width: 100%;
+  height: 45vw;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hotel-img-title {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.hotel-img-subtitle {
+  position: absolute;
+  bottom: 80px;
+  left: 22px;
+}
+
+.hotel-img-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 22px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.categories {
+  margin-top: 5%;
+}
+
+
+.cat-title {
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 10px 0px 0px 0px;
+}
+
+.cat-subtitle {
+  font-size: 15px;
+}
+
+.grid {
+  margin: 35px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+  overflow-x:auto;
+  scroll-behavior: smooth;
+}
+
+
+.grad-grid-item {
+  flex: 0 0 auto;
+  width: 24%;
+  height: 20vw;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.9)
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.grad-grid-item:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+.grad-grid-title {
+  position: absolute;
+  bottom: 20px;
+  left:  25px;
+  margin-bottom: 0%;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(248, 48, 158);
+}
+
+.grad-grid-item img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.rating-grid-item {
+  flex: 0 0 auto;
+  width: 24%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.rating-grid-img {
+  width: 22vw;
+  height: 22vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.rating-grid-item:hover ,.rating-grid-img img {
+  opacity: 0.7;
+}
+
+.rating-grid-item:hover .rating-grid-title {
+  color: rgb(228, 28, 28);
+  text-decoration: underline;
+}
+
+.rating-grid-img img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.rating-grid-title {
+  font-size: 15px;
+  color: rgb(131, 218, 31);
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 12px !important;
+  color: rgb(10, 67, 223);
+}
+
+.review-amt {
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.rating-grid-cost {
+  font-size: 14px;
+  color: black;
+  margin-top: 0;
+}
+
+/*User's CSS*/
+
+.list {
+    margin-top: 60px;
+}
+
+.list-title {
+    font-size: 20px;
+}
+
+.list-subtitle {
+    margin-top: 8px;
+}
+
+
+.list-wrapper {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+}
+
+.user-list {
+    display: flex;
+    gap: 12px;
+    max-width: 100%;
+    overflow-x: scroll; 
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    scroll-behavior: smooth;    
+}
+
+
+.user {
+    all: unset;
+    border: 1px solid black;
+    min-width: calc(25% - 16px);
+    padding-top: 2px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: rgb(233, 45, 45);
+    color: rgb(8, 1, 1);
+}
+
+
+.user-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
+#user-section{
+    border: 1px solid black;
+    max-width: 50%;
+    margin-left: 30%;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #393e46;
+    color:white;
+}
+

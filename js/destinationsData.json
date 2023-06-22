@@ -1,0 +1,17 @@
+{
+    "data":[
+        {
+            "text":"Hanoi, Vietnam",
+            "imgPath":"Destinations/caption1.jpg"
+        },{
+            "text":"Ubud, Indonesia",
+            "imgPath":"Destinations/caption2.jpg"
+        },{
+            "text":"Phuket, Thailand",
+            "imgPath":"Destinations/caption3.jpg"
+        },{
+            "text":"Jeju Island",
+            "imgPath":"Destinations/caption4.jpg"
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TripAdvisor-Clone : Overview</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="main_container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img class="img-logo" src="../Images/logo.png" >
+        </a>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons-outlined">
+          edit
+        </span>
+        <a href="/review"> Review </a>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons-outlined">
+          favorite_border
+        </span>
+        <a href="/trips"> Trips </a>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons-outlined">
+          notifications
+        </span>
+        <a href="/alerts"> Alerts </a>
+      </div>
+      <div class="nav-item" id="sign">
+        <a href="/signin"> Sign-In </a>
+      </div>
+      <div class="nav-item">
+        <span class="material-icons-outlined">
+          shopping_cart
+        </span>
+        <a href="/basket">Basket</a>
+      </div>
+    </div>
+
+
+    <div class="menu">
+      <div class="menu-item">
+        <a href="/hotels">Hotels</a>
+        <span class="material-icons-outlined">
+          bed
+        </span>
+      </div>
+      <div class="menu-item">
+        <a href="/features"> Things to Do </a>
+        <span class="material-icons-outlined">
+          confirmation_number
+        </span>
+      </div>
+      <div class="menu-item">
+        <a href="/holidayhomes"> Holiday Homes </a>
+        <span class="material-icons-outlined">
+          house_siding
+        </span>
+      </div>
+      <div class="menu-item">
+        <a href="/restaurants"> Restaurants </a>
+        <span class="material-icons-outlined">
+          restaurant_menu
+        </span>
+      </div>
+      <div class="menu-item">
+        <a href="/travelstories"> Travel Stories </a>
+        <span class="material-icons-outlined">
+          language
+        </span>
+      </div>
+      <div class="menu-item">
+        <a href="/more"> More </a>
+        <span class="material-icons-outlined">
+          more_horiz
+        </span>
+      </div>
+    </div>
+
+    <div class="search-background-img">
+      <img src="../Images/search-img.webp">
+      <form>
+        <input type="search" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" required="" name="q" class="search" placeholder="Where to?" title="Search" role="searchbox" aria-label="Search" aria-controls="typeahead_results" aria-autocomplete="list" value="">
+      </form>
+    </div>
+
+    <div class="hotel-img">
+      <p class="hotel-img-title">Check into the world's best hotels</p>
+      <p class="hotel-img-subtitle">See our top 1% powered by real reviews.</p>
+      <button class="hotel-img-btn">See the list</p>
+    </div>
+
+    <div class="categories">
+      <p class="cat-title"> Explore top hotels by category </p>
+      <p class="cat-subtitle"> From fam-friendly to next-level luxe and more </p>
+      <div class="categories-grid grid">
+        <!-- Fetched from JSON -->
+      </div>
+    </div>
+
+    <div class="tour">
+      <p class="cat-title">Ways to tour Bengaluru</p>
+      <p class="cat-subtitle">Book these experiences for a close-up look at Bengaluru.</p>
+      <div class="tour-grid grid">
+        <!-- Fetched from JSON -->
+      </div>
+    </div>
+
+    <div class="getaways">
+      <p class="cat-title">Weekend getaways from Bengaluru</p>
+      <p class="cat-subtitle">Explore what’s nearby</p>
+      <div class="getaways-grid grid">
+        <!-- Fetched from JSON -->
+      </div>
+    </div>
+
+    <div class="destinations">
+      <p class="cat-title">Top destinations for your next holiday</p>
+      <p class="cat-subtitle">Here's where your fellow travellers are headed</p>
+      <div class="destinations-grid grid">
+        <!-- Fetched from JSON -->
+      </div>
+    </div>
+
+    <div class="list">
+      <p class="cat-title">Users</p>
+      <p class="cat-subtitle"> Here you can see all the user's list</p>
+      <div class="list-wrapper">
+        <div class="user-list" id="user-list"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
